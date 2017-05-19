@@ -1,0 +1,52 @@
+<form class="form-horizontal" (ngSubmit)="onSubmit()">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Editer un Séjour</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">ID</label>  
+  <div class="col-md-4">
+  <input [(ngModel)]="idSejour" id="textinput" name="textinput" type="text" placeholder="Entrez un ID" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Nom</label>  
+  <div class="col-md-4">
+  <input [(ngModel)]="nomSejour" id="textinput" name="textinput" type="text" placeholder="Entrez un nom" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">URL</label>  
+  <div class="col-md-4">
+  <input [(ngModel)]="urlImageSejour" id="textinput" name="textinput" type="text" placeholder="Entez une URL" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Prix</label>  
+  <div class="col-md-4">
+  <input [(ngModel)]="prixSejour" id="textinput" name="textinput" type="text" placeholder="Editez le prix" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="singlebutton">Single Button</label>
+  <div class="col-md-4">
+    <button id="singlebutton" name="singlebutton" class="btn btn-primary">Button</button>
+  </div>
+</div>
+
+</fieldset>
+</form>

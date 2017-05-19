@@ -1,0 +1,11 @@
+<div>
+  <h1> Carousel </h1>
+
+  <h2> {{listSejour[idCourant].nom}}  </h2> <br>
+  <h3> {{listSejour[idCourant].prix}}€ </h3> <br>
+  <img [src]="'assets/' + listSejour[idCourant].urlImage">
+
+  <a  class="btn btn-primary" (click)="startButton()">Start</a>
+  <a  class="btn btn-danger" (click)="stopButton()">Stop</a>
+
+</div>

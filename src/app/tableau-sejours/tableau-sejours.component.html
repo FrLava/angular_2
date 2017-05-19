@@ -1,0 +1,27 @@
+<div>
+
+  <h1>Tableau des séjours</h1>
+
+  <table class="table">
+
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nom</th>
+        <th>Image</th>
+        <th>Prix</th>
+      </tr>
+    </thead>
+
+    <tbody >
+      <tr *ngFor='let listeSejour of listeSejour' [ngClass]="{'green' : listeSejour.prix < 1000}">
+        <td> {{ listeSejour.id }} </td>
+        <td> {{ listeSejour.nom }} </td>
+        <td> {{ listeSejour.urlImage }} </td>
+        <td> {{ listeSejour.prix }} </td>
+        <td > <a routerLinkActive="active" routerLink="/edition" class="btn btn-primary"> <span class="glyphicon glyphicon-pencil"></span> Editer</a>  </td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>

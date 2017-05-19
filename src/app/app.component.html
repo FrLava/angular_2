@@ -1,3 +1,19 @@
-<h1>
-  {{title}}
-</h1>
+<!--<div class="container">
+
+<app-tableau-sejours></app-tableau-sejours>
+
+</div>-->
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li routerLinkActive="active"><a routerLink="/sejours">Tableau</a></li>
+      <li routerLinkActive="active"><a routerLink="/carousel">Carousel</a></li>
+      <li routerLinkActive="active"><a routerLink="/edition">Edition</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
